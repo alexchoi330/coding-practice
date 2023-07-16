@@ -3,10 +3,11 @@ import random
 user_wins = 0
 computer_wins = 0
 options = ['rock', 'paper', 'sissor']
+quit_options = ['q', 'quit']
 while True:
     user_input = input('choose one of rock paper or sissor or Q to quit: ')
     user_input = user_input.lower()
-    if user_input == 'q':
+    if user_input in ['q', 'quit'] :
         # quit()
         break
     
@@ -39,4 +40,4 @@ while True:
      
      
 print('you won', user_wins, 'times and', 'the computer won', computer_wins , 'times')
-print('goodbye, thank you for playing')
+print('thank you for playing and goodbye')
